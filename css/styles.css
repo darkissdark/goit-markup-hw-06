@@ -21,7 +21,3 @@ body {
   background: #fff;
   letter-spacing: 0.02em;
 }
-
-.c-nav:visited:not(:hover) {
-  padding: 24px 0;
-}
