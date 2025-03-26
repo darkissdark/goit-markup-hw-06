@@ -39,3 +39,45 @@ button {
   cursor: pointer;
   border: 0
 }
+
+button:focus {
+  background-color: var(--background-order-button-hover);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: var(--color-primary);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+p {
+  margin: 0;
+}
+
+.address {
+  font-style: normal;
+}
+
+.c-nav {
+  color: var(--color-primary);
+}
+
+.c-nav:visited:not(:hover) {
+  color: var(--color-primary);
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.ml-40 {
+  margin-left: 40px;
+}
+
+.unstyle {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
