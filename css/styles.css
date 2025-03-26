@@ -27,8 +27,3 @@ img {
   height: auto;
   vertical-align: top;
 }
-
-a {
-  color: var(--color-base);
-  text-decoration: none;
-}
