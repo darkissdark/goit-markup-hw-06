@@ -4,6 +4,7 @@
   --color-base: #434455;
   --color-base-hover: #404BBF;
   --color-primary: #2E2F42;
+  --color-base-footer: #f4f4fd;
   /* Buttons */
   --background-order-button: #4D5AE5;
   --background-order-button-hover: #404BBF;
@@ -13,11 +14,12 @@
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: var(--color-base);
   background: #fff;
+  letter-spacing: 0.02em;
 }
 
 header {
@@ -91,8 +93,10 @@ p {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 700;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   margin-right: 76px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   color: var(--color-brand);
 }
 
@@ -202,13 +206,13 @@ p {
 }
 .footer {
   background: var(--color-primary);
-  color: #fff;
+  color: var(--color-base-footer);
 }
 
-.footer .logo {
-  margin-bottom: 16px;
-  display: inline-block;
+.footer .footer-dexcription {
+  margin: 16px 0 0;
 }
+
 .footer .c-nav {
-  color: #fff;
+  color: var(--color-base-footer);
 }
