@@ -35,7 +35,6 @@ img {
 a {
   color: var(--color-base);
   text-decoration: none;
-  font-style: normal;
   transition: background 0.3s;
 }
 
@@ -61,6 +60,10 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin: 0;
+}
+
+.address {
+  font-style: normal;
 }
 
 .c-nav {
