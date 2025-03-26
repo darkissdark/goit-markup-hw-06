@@ -22,7 +22,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-header {
+.c-nav:visited:not(:hover) {
   padding: 24px 0;
 }
 
@@ -56,6 +56,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   color: var(--color-primary);
   font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
 }
 
 p {
@@ -138,6 +140,7 @@ p {
   font-size: 36px;
   line-height: 40px;
   margin-bottom: 72px;
+  text-transform: capitalize;
 }
 
 .subsection-title { 
@@ -154,12 +157,15 @@ p {
   padding: 16px 32px;
   border-radius: 4px;
   font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   font-weight: 500;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   transition: background 0.3s;
 }
 
-.order-button:hover{
+.order-button:hover,
+.order-button:focus {
   background: var(--background-order-button-hover);
 }
 
