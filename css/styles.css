@@ -17,6 +17,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: var(--color-base);
+  background: #fff;
 }
 
 header {
@@ -36,7 +37,7 @@ a {
   transition: background 0.3s;
 }
 
-a:visited {
+a:visited:not(.logo) {
   color: var(--color-base);
 }
 
@@ -82,10 +83,6 @@ p {
   padding: 0 15px;
 }
 
-.c-brand {
-  color: var(--color-brand);
-}
-
 .text-c {
   text-align: center;
 }
@@ -96,6 +93,7 @@ p {
   font-weight: 700;
   font-family: Raleway;
   margin-right: 76px;
+  color: var(--color-brand);
 }
 
 .flex{
@@ -198,14 +196,19 @@ p {
   flex: 0 0 calc(33.33% - 16px);
 }
 
-footer {
+.footer-wrapper {
   background: var(--color-primary);
-  color: #fff;
   padding: 100px 0;
 }
+.footer {
+  background: var(--color-primary);
+  color: #fff;
+}
 
-footer .logo {
+.footer .logo {
   margin-bottom: 16px;
   display: inline-block;
+}
+.footer .c-nav {
   color: #fff;
 }
