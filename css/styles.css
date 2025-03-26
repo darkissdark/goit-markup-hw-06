@@ -22,7 +22,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-img {
+.img {
   width: 100%;
   vertical-align: top;
 }
