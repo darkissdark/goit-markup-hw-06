@@ -21,3 +21,50 @@ body {
   background: #fff;
   letter-spacing: 0.02em;
 }
+
+.c-nav:visited:not(:hover) {
+  padding: 24px 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+a {
+  color: var(--color-base);
+  text-decoration: none;
+}
+
+a:visited:not(.logo), a:focus:not(.logo) {
+  color: var(--color-base);
+}
+
+a:hover:not(.logo), a:focus:not(.logo) {
+  color: var(--color-base-hover);
+}
+
+button {
+  cursor: pointer;
+  border: 0
+}
+
+button:focus {
+  background-color: var(--background-order-button-hover);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: var(--color-primary);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+p {
+  margin: 0;
+}
+
+.address {
+  font-style: normal;
+}
