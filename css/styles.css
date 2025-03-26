@@ -39,11 +39,11 @@ a {
   transition: background 0.3s;
 }
 
-a:visited:not(.logo) {
+a:visited:not(.logo), a:focus:not(.logo) {
   color: var(--color-base);
 }
 
-a:hover:not(.logo) {
+a:hover:not(.logo), a:focus:not(.logo) {
   color: var(--color-base-hover);
 }
 
@@ -128,7 +128,7 @@ p {
 }
 
 .order-section-wrapper {
-  background-color: var(--color-base);
+  background-color: var(--color-primary);
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -173,7 +173,7 @@ p {
 
 .order-button:hover,
 .order-button:focus {
-  background-color: var(--background-order-button-hover);
+  background-color: #404BBF;
 }
 
 .section-padding {
