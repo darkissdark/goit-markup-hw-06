@@ -75,7 +75,21 @@ p {
   margin-left: 40px;
 }
 
-.container {
-  width: 1158px;
+.header {
+  padding: 24px 15px;
 }
 
+.text-c {
+  text-align: center;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  margin-right: 76px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--color-brand);
+}
