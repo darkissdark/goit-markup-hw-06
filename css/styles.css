@@ -22,7 +22,20 @@ body {
   letter-spacing: 0.02em;
 }
 
-.img {
-  width: 100%;
-  vertical-align: top;
+a {
+  color: var(--color-base);
+  text-decoration: none;
+}
+
+a:visited:not(.logo), a:focus:not(.logo) {
+  color: var(--color-base);
+}
+
+a:hover:not(.logo), a:focus:not(.logo) {
+  color: var(--color-base-hover);
+}
+
+button {
+  cursor: pointer;
+  border: 0
 }
