@@ -58,3 +58,19 @@ p {
 .address {
   font-style: normal;
 }
+
+.c-nav {
+  color: var(--color-primary);
+}
+
+.c-nav:visited:not(:hover) {
+  color: var(--color-primary);
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.ml-40 {
+  margin-left: 40px;
+}
