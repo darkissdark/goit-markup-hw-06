@@ -25,14 +25,3 @@ body {
 .c-nav:visited:not(:hover) {
   padding: 24px 0;
 }
-
-img {
-  width: 100%;
-  height: auto;
-  vertical-align: top;
-}
-
-a {
-  color: var(--color-base);
-  text-decoration: none;
-}
