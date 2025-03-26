@@ -171,7 +171,9 @@ p {
   transition: background 0.3s;
 }
 
-.order-button:hover,
+.order-button:hover{
+  background-color: var(--background-order-button-hover);
+}
 .order-button:focus {
   background-color: #404BBF;
 }
