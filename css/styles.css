@@ -206,11 +206,11 @@ p {
   width: calc((100% - 72px) / 4);
 }
 
-.g40{
+.menu{
   gap: 40px;
 }
 
-.g24{
+.gap{
   gap: 24px;
 }
 
@@ -222,10 +222,14 @@ p {
   background: var(--background-team);
 }
 
+.team-member-in{
+  padding: 32px 0
+}
+
 .team-member {
   background: #fff;
   width: calc((100% - 72px) / 4);
-  border-radius: 4px;
+  border-radius: 0px 0px 4px 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -242,10 +246,14 @@ p {
 }
 
 .portfolio-item {
-  border: 1px solid var(--color-border);
-  flex: 0 0 calc(33.33% - 16px);
+  width: calc((100% - 48px) / 3);
 }
 
+.portfolio-item-in {
+  border: 1px solid var(--color-border);
+  padding: 32px 16px;
+  border-top: none;
+}
 
 .footer {
   background: var(--color-primary);
