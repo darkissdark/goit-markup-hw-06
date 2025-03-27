@@ -1,3 +1,3 @@
-# goit-markup-hw-03
+# goit-markup-hw-04
 
-[GitHub Pages link](https://darkissdark.github.io/goit-markup-hw-03/)
+[GitHub Pages link](https://darkissdark.github.io/goit-markup-hw-04/)
