@@ -162,15 +162,17 @@ p {
   flex-wrap: wrap;
 }
 
+.f-text-c {
+  justify-content: center;
+}
+
 .order-section-wrapper {
-  background-color: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
-  background-image: url(../images/order-bg.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/order-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding: 188px 0;
   max-width: 1440px;
-  
 }
 
 .page-title {
@@ -192,8 +194,17 @@ p {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
-  margin: 32px 16px 8px;
+  margin: 0 0 8px;
   text-transform: capitalize;
+}
+
+.footer-soc-title {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 16px;
+  letter-spacing: 0.02em;
+  color: #fff;
+  font-weight: 500;
 }
 
 .visually-hidden{
@@ -246,12 +257,16 @@ p {
   width: calc((100% - 72px) / 4);
 }
 
-.menu{
+.large-gap{
   gap: 40px;
 }
 
 .gap{
   gap: 24px;
+}
+
+.small-gap{
+  gap: 16px;
 }
 
 .team-section-wrapper {
@@ -271,6 +286,11 @@ p {
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.soc-item {
+  width: 40px;
+  height: 40px;
+}
+
 .soc-link{
   width: 100%;
   height: 100%;
@@ -286,6 +306,7 @@ p {
   fill: #f4f4fd;
 }
 
+.soc-link:focus,
 .soc-link:hover {
   background-color: var(--color-base-hover);
 }
@@ -294,16 +315,44 @@ p {
   border-radius: 4px 4px 0 0;
 }
 
-.subsection-p {
-  margin: 0 16px 32px 16px;
-}
-
 .portfolio-section-wrapper .flex {
   gap: 48px 24px;
 }
 
 .portfolio-item {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-item:hover .portfolio-picture-p {
+  transform: translateY(0%);
+}
+
+.portfolio-picture-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px 4px 0 0;
+}
+
+.portfolio-picture-p{
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-base-footer);
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item-in {
@@ -329,4 +378,8 @@ p {
 
 .footer .c-nav {
   color: var(--color-base-footer);
+}
+
+.logo-wrapper {
+  margin-right: 120px;
 }
