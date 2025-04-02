@@ -471,9 +471,16 @@
         </div>
         <div class="subscribe-wrapper">
           <p class="footer-title">Subscribe</p>
-          <form class="flex">
-            <input type="email" class="subscribe-input" placeholder="E-mail" />
-            <button class="middle button flex" type="submit">
+          <form class="flex gap">
+            <label class="subscribe-label" for="footer-email">
+              <input
+                id="footer-email"
+                type="email"
+                class="subscribe-input"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="middle button flex f-text-c f-center" type="submit">
               Subscribe
               <svg width="24" height="24" class="subscribe-icon">
                 <use href="./images/icons.svg#icon-subscribe"></use>
@@ -483,22 +490,23 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay">
+    <div class="modal-overlay is-open">
       <div class="modal">
         <button type="button" class="modal-close flex f-center f-text-c">
           <svg width="8" height="8" class="close-icon">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <div class="text-c modal-title">
+        <p class="text-c modal-title">
           Leave your contacts and we will call you back
-        </div>
+        </p>
         <form>
           <div class="modal-input-wrapper">
-            <label for="modal-form-name" class="modal-form-label"> Name </label>
             <div class="modal-form-input-wrapper">
+              <label for="user-name" class="modal-form-label"> Name </label>
               <input
-                id="modal-form-name"
+                id="user-name"
+                name="user-name"
                 type="text"
                 class="modal-form-input"
                 required
@@ -508,12 +516,11 @@
               </svg>
             </div>
 
-            <label for="modal-form-phone" class="modal-form-label">
-              Phone
-            </label>
             <div class="modal-form-input-wrapper">
+              <label for="user-phone" class="modal-form-label"> Phone </label>
               <input
-                id="modal-form-phone"
+                id="user-phone"
+                name="user-phone"
                 type="tel"
                 class="modal-form-input"
                 required
@@ -523,12 +530,11 @@
               </svg>
             </div>
 
-            <label for="modal-form-email" class="modal-form-label">
-              Email
-            </label>
             <div class="modal-form-input-wrapper">
+              <label for="user-email" class="modal-form-label"> Email </label>
               <input
-                id="modal-form-email"
+                id="user-email"
+                name="user-email"
                 type="email"
                 class="modal-form-input"
                 required
@@ -539,23 +545,25 @@
             </div>
           </div>
 
-          <label for="modal-form-textarea" class="modal-form-label">
-            Comment
-          </label>
-          <textarea
-            id="modal-form-textarea"
-            class="modal-form-textarea modal-form-input"
-            placeholder="Text input"
-          ></textarea>
+          <div class="text-area-wrapper">
+            <label for="user-comment" class="modal-form-label"> Comment </label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="modal-form-textarea modal-form-input"
+              placeholder="Text input"
+            ></textarea>
+          </div>
 
           <div class="modal-form-privacy">
             <input
-              id="modal-form-privacy"
-              class="checkbox"
+              id="user-privacy"
+              class="checkbox visually-hidden"
               type="checkbox"
+              value="true"
               required
             />
-            <label class="label" for="modal-form-privacy"
+            <label class="label" for="user-privacy"
               >I accept the terms and conditions of the
               <a class="privacy-link" href="">Privacy Policy</a></label
             >

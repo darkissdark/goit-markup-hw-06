@@ -420,7 +420,6 @@ p {
   background: transparent;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  margin-right: 24px;
   padding: 8px 16px;
   color: var(--color-text-secondary);
   line-height: 24px;
@@ -454,7 +453,7 @@ p {
   background-color: rgba(46, 47, 66, 0.4);
   opacity: 0;
   pointer-events: none;
-  transition: opacity var(--transition-base);
+  transition: opacity var(--transition-base), visibility var(--transition-base);
 }
 
 .modal-overlay.is-open {
@@ -463,13 +462,18 @@ p {
 }
 
 .modal {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background-color: #FCFCFC;
   border-radius: 4px;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
   max-width: 408px;
+  min-height: 584px;
   width: 100%;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  transition: transform var(--transition-base);
 }
 
 .modal-title {
@@ -478,16 +482,20 @@ p {
   line-height: 24px;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  color: color(--color-text-primary);
 }
 
 .modal-close {
   width: 24px;
   height: 24px;
-  margin: 0 0 24px auto;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--color-border);
   border-radius: 50%;
-  transition: background-color var(--transition-base), border-color var(--transition-base);
+  transition: background-color var(--transition-base), border var(--transition-base);
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  padding: 0;
 }
 .close-icon{
   transition: fill var(--transition-base);
@@ -496,7 +504,7 @@ p {
 .modal-close:focus,
 .modal-close:hover{
   background-color: var(--color-brand-hover);
-  border-color: var(--color-brand-hover);
+  border: none;
 }
 
 .modal-close:focus .close-icon,
@@ -508,11 +516,14 @@ p {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.04em;
+  line-height: 1.17;
+  display: block;
+  margin-bottom: 4px;
   color: #8E8F99;
 }
 
 .modal-form-input-wrapper{
-  margin: 4px 0 8px;
+  margin: 0 0 8px;
   position: relative;
 }
 
@@ -530,7 +541,8 @@ p {
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  padding: 8px 16px 8px 37px; 
+  padding: 8px 16px 8px 38px; 
+  background-color: transparent;
   transition: border-color var(--transition-base);
 }
 
@@ -544,14 +556,22 @@ p {
   fill: var(--color-brand-primary);
 }
 
+.text-area-wrapper{
+  margin-bottom: 16px;
+}
+
 .modal-form-textarea{
   width: 100%;
   height: 120px;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   resize: none;
+  color: rgba(46, 47, 66, 0.4);
   padding: 8px 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  transition: border-color var(--transition-base);
 }
 
 .modal-form-privacy{
@@ -567,9 +587,6 @@ p {
   text-decoration: underline;
   color: var(--color-brand-primary);
   margin-left: 8px;
-}
-.checkbox{
-  display: none;
 }
 .checkbox+.label {
   display: flex;
