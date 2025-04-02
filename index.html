@@ -504,44 +504,50 @@
         <form>
           <div class="modal-form-input-wrapper">
             <label for="user-name" class="modal-form-label"> Name </label>
-            <input
-              id="user-name"
-              name="user-name"
-              type="text"
-              class="modal-form-input"
-              required
-            />
-            <svg width="18" height="24" class="modal-form-icon">
-              <use href="./images/icons.svg#icon-name"></use>
-            </svg>
+            <div class="icon-wrap">
+              <input
+                id="user-name"
+                name="user-name"
+                type="text"
+                class="modal-form-input"
+                required
+              />
+              <svg width="18" height="24" class="modal-form-icon">
+                <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="modal-form-input-wrapper">
             <label for="user-phone" class="modal-form-label"> Phone </label>
-            <input
-              id="user-phone"
-              name="user-phone"
-              type="tel"
-              class="modal-form-input"
-              required
-            />
-            <svg width="18" height="24" class="modal-form-icon">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
+            <div class="icon-wrap">
+              <input
+                id="user-phone"
+                name="user-phone"
+                type="tel"
+                class="modal-form-input"
+                required
+              />
+              <svg width="18" height="24" class="modal-form-icon">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="modal-form-input-wrapper">
             <label for="user-email" class="modal-form-label"> Email </label>
-            <input
-              id="user-email"
-              name="user-email"
-              type="email"
-              class="modal-form-input"
-              required
-            />
-            <svg width="18" height="24" class="modal-form-icon">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
+            <div class="icon-wrap">
+              <input
+                id="user-email"
+                name="user-email"
+                type="email"
+                class="modal-form-input"
+                required
+              />
+              <svg width="18" height="24" class="modal-form-icon">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="text-area-wrapper">
@@ -557,13 +563,19 @@
           <div class="modal-form-privacy">
             <input
               id="user-privacy"
+              name="user-privacy"
               class="checkbox visually-hidden"
               type="checkbox"
               value="true"
               required
             />
             <label class="label" for="user-privacy"
-              >I accept the terms and conditions of the
+              ><span class="label-checkbox">
+                <svg width="10" height="8" class="modal-form-checkbox">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
               <a class="privacy-link" href="">Privacy Policy</a></label
             >
           </div>

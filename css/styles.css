@@ -572,6 +572,7 @@ p {
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: transparent;
   transition: border-color var(--transition-base);
+  outline: transparent;
 }
 
 .modal-form-privacy{
@@ -588,29 +589,34 @@ p {
   color: var(--color-brand-primary);
   margin-left: 8px;
 }
+.label-checkbox {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color var(--transition-base), border var(--transition-base), fill var(--transition-base);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  margin-right: 8px;
+}
+
+.icon-wrap{
+  position: relative;
+}
+
 .checkbox+.label {
   display: flex;
   align-items: center;
   user-select: none;
   cursor: pointer;
   position: relative;
+  line-height: 1.17;
+  color: #8e8f99;
 }
-.checkbox+.label::before {
-  content: '';
-  display: block;
-  position: relative;
-  width: 16px;
-  height: 16px;
-  border-radius: 2px;
-  border-width: 1px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  margin-right: 8px;
-}
-.checkbox:checked+.label::before {
-  border-color: var(--color-brand-primary);
+.checkbox:checked+.label .label-checkbox {
   background-color: var(--color-brand-primary);
-  background-position: center;
-  background-image: url(../images/checkbox.svg);
-  background-repeat: no-repeat;
-  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8'%3E%3Cuse href='./images/icons.svg%23icon-checkbox'%3E%3C/use%3E%3C/svg%3E"); */
+  border: none;
+  fill: var(--color-base-light);
 }
