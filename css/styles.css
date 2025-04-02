@@ -482,7 +482,7 @@ p {
   line-height: 24px;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
-  color: color(--color-text-primary);
+  color: var(--color-text-primary);
 }
 
 .modal-close {
