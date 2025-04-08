@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WEBSTUDIO - mainpage</title>
-    <link rel="preload" href="./images/order-bg.jpg" as="image" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,11 +19,30 @@
   <body>
     <header class="header">
       <div class="container flex f-space f-center">
-        <nav class="flex f-center">
+        <nav class="flex f-center m-f-grow f-space">
           <a class="logo links-padding" href="./index.html" title="WebStudio"
             >Web<span class="c-nav">Studio</span></a
           >
-          <ul class="unstyle flex large-gap">
+          <button
+            class="menu-button flex f-center f-text-c dhide"
+            type="button"
+            aria-label="Menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+            >
+              <path
+                fill="#2F2F37"
+                fill-rule="evenodd"
+                d="M3.6 6a1.2 1.2 0 0 1 1.2-1.2h14.4a1.2 1.2 0 1 1 0 2.4H4.8A1.2 1.2 0 0 1 3.6 6ZM3.6 12a1.2 1.2 0 0 1 1.2-1.2h14.4a1.2 1.2 0 1 1 0 2.4H4.8A1.2 1.2 0 0 1 3.6 12ZM3.6 18a1.2 1.2 0 0 1 1.2-1.2h14.4a1.2 1.2 0 1 1 0 2.4H4.8A1.2 1.2 0 0 1 3.6 18Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <ul class="unstyle flex large-gap mhide m-f-grow f-text-c">
             <li class="nav-item">
               <a class="nav-link active c-nav links-padding" href="./index.html"
                 >Studio</a
@@ -38,17 +56,15 @@
             </li>
           </ul>
         </nav>
-        <address class="address">
-          <ul class="unstyle flex large-gap">
+        <address class="address mhide">
+          <ul class="unstyle flex large-gap address-list">
             <li class="address-item">
-              <a
-                class="address-link links-padding"
-                href="mailto:info@devstudio.com"
+              <a class="address-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
             <li class="address-item">
-              <a class="address-link links-padding" href="tel:+110001111111"
+              <a class="address-link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
@@ -59,7 +75,9 @@
     <main>
       <section class="order-section-wrapper">
         <div class="container">
-          <h1 class="page-title">Effective Solutions<br />for Your Business</h1>
+          <h1 class="page-title text-c">
+            Effective Solutions for Your Business
+          </h1>
           <button class="large button" type="button">Order Service</button>
         </div>
       </section>
@@ -68,7 +86,7 @@
           <h2 class="section-title text-c visually-hidden">Our benefits</h2>
           <ul class="flex f-space unstyle gap">
             <li class="benefits-item">
-              <div class="benefits-icon-wrapper">
+              <div class="benefits-icon-wrapper mhide thide">
                 <svg width="64" height="64" class="benefits-icon">
                   <use href="./images/icons.svg#icon-benefit-icon-1"></use>
                 </svg>
@@ -80,7 +98,7 @@
               </p>
             </li>
             <li class="benefits-item">
-              <div class="benefits-icon-wrapper">
+              <div class="benefits-icon-wrapper mhide thide">
                 <svg width="64" height="64" class="benefits-icon">
                   <use href="./images/icons.svg#icon-benefit-icon-2"></use>
                 </svg>
@@ -92,7 +110,7 @@
               </p>
             </li>
             <li class="benefits-item">
-              <div class="benefits-icon-wrapper">
+              <div class="benefits-icon-wrapper mhide thide">
                 <svg width="64" height="64" class="benefits-icon">
                   <use href="./images/icons.svg#icon-benefit-icon-3"></use>
                 </svg>
@@ -104,7 +122,7 @@
               </p>
             </li>
             <li class="benefits-item">
-              <div class="benefits-icon-wrapper">
+              <div class="benefits-icon-wrapper mhide thide">
                 <svg width="64" height="64" class="benefits-icon">
                   <use href="./images/icons.svg#icon-benefit-icon-4"></use>
                 </svg>
@@ -125,6 +143,7 @@
             <li class="team-member">
               <img
                 width="264"
+                srcset="./images/mark.jpg 1x, ./images/mark-x2.jpg 2x"
                 src="./images/mark.jpg"
                 alt="Smiling man with short dark hair and a beard wearing a light blue button-up shirt"
                 loading="lazy"
@@ -135,28 +154,28 @@
                 <p class="subsection-p">Product Designer</p>
                 <ul class="unstyle flex gap f-center f-text-c">
                   <li class="soc-item">
-                    <a class="soc-link" href="">
+                    <a class="soc-link flex f-center f-text-c" href="">
                       <svg width="16" height="16" class="soc-icon">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc-item">
-                    <a class="soc-link" href="">
+                    <a class="soc-link flex f-center f-text-c" href="">
                       <svg width="16" height="16" class="soc-icon">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc-item">
-                    <a class="soc-link" href="">
+                    <a class="soc-link flex f-center f-text-c" href="">
                       <svg width="16" height="16" class="soc-icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc-item">
-                    <a class="soc-link" href="">
+                    <a class="soc-link flex f-center f-text-c" href="">
                       <svg width="16" height="16" class="soc-icon">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
@@ -168,6 +187,7 @@
             <li class="team-member">
               <img
                 width="264"
+                srcset="./images/tom.jpg 1x, ./images/tom-x2.jpg 2x"
                 src="./images/tom.jpg"
                 alt="Smiling young man with short dark hair wearing a light blue button-up shirt"
                 loading="lazy"
@@ -178,28 +198,28 @@
                 <p class="subsection-p">Frontend Developer</p>
                 <ul class="unstyle flex gap f-center f-text-c">
                   <li class="soc-item">
-                    <a class="soc-link" href="">
+                    <a class="soc-link flex f-center f-text-c" href="">
                       <svg width="16" height="16" class="soc-icon">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc-item">
-                    <a class="soc-link" href="">
+                    <a class="soc-link flex f-center f-text-c" href="">
                       <svg width="16" height="16" class="soc-icon">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc-item">
-                    <a class="soc-link" href="">
+                    <a class="soc-link flex f-center f-text-c" href="">
                       <svg width="16" height="16" class="soc-icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc-item">
-                    <a class="soc-link" href="">
+                    <a class="soc-link flex f-center f-text-c" href="">
                       <svg width="16" height="16" class="soc-icon">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
@@ -211,6 +231,7 @@
             <li class="team-member">
               <img
                 width="264"
+                srcset="./images/camila.jpg 1x, ./images/camila-x2.jpg 2x"
                 src="./images/camila.jpg"
                 alt="A young woman with long, dark hair and a warm smile is facing the camera"
                 loading="lazy"
@@ -221,28 +242,28 @@
                 <p class="subsection-p">Marketing</p>
                 <ul class="unstyle flex gap f-center f-text-c">
                   <li class="soc-item">
-                    <a class="soc-link" href="">
+                    <a class="soc-link flex f-center f-text-c" href="">
                       <svg width="16" height="16" class="soc-icon">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc-item">
-                    <a class="soc-link" href="">
+                    <a class="soc-link flex f-center f-text-c" href="">
                       <svg width="16" height="16" class="soc-icon">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc-item">
-                    <a class="soc-link" href="">
+                    <a class="soc-link flex f-center f-text-c" href="">
                       <svg width="16" height="16" class="soc-icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc-item">
-                    <a class="soc-link" href="">
+                    <a class="soc-link flex f-center f-text-c" href="">
                       <svg width="16" height="16" class="soc-icon">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
@@ -254,6 +275,7 @@
             <li class="team-member">
               <img
                 width="264"
+                srcset="./images/daniel.jpg 1x, ./images/daniel-x2.jpg 2x"
                 src="./images/daniel.jpg"
                 alt="Smiling man with short wavy dark hair and a beard wearing a light gray t-shirt"
                 loading="lazy"
@@ -264,28 +286,28 @@
                 <p class="subsection-p">UI Designer</p>
                 <ul class="unstyle flex gap f-center f-text-c">
                   <li class="soc-item">
-                    <a class="soc-link" href="">
+                    <a class="soc-link flex f-center f-text-c" href="">
                       <svg width="16" height="16" class="soc-icon">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc-item">
-                    <a class="soc-link" href="">
+                    <a class="soc-link flex f-center f-text-c" href="">
                       <svg width="16" height="16" class="soc-icon">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc-item">
-                    <a class="soc-link" href="">
+                    <a class="soc-link flex f-center f-text-c" href="">
                       <svg width="16" height="16" class="soc-icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc-item">
-                    <a class="soc-link" href="">
+                    <a class="soc-link flex f-center f-text-c" href="">
                       <svg width="16" height="16" class="soc-icon">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
@@ -305,6 +327,10 @@
               <div class="portfolio-picture-wrapper">
                 <img
                   width="360"
+                  srcset="
+                    ./images/portfolio1.jpg    1x,
+                    ./images/portfolio1-x2.jpg 2x
+                  "
                   src="./images/portfolio1.jpg"
                   alt="mobile ui interface"
                   loading="lazy"
@@ -325,6 +351,10 @@
               <div class="portfolio-picture-wrapper">
                 <img
                   width="360"
+                  srcset="
+                    ./images/portfolio2.jpg    1x,
+                    ./images/portfolio2-x2.jpg 2x
+                  "
                   src="./images/portfolio2.jpg"
                   alt="qr code scaning"
                   loading="lazy"
@@ -345,6 +375,10 @@
               <div class="portfolio-picture-wrapper">
                 <img
                   width="360"
+                  srcset="
+                    ./images/portfolio3.jpg    1x,
+                    ./images/portfolio3-x2.jpg 2x
+                  "
                   src="./images/portfolio3.jpg"
                   alt="laptop and phone"
                   loading="lazy"
@@ -365,6 +399,10 @@
               <div class="portfolio-picture-wrapper">
                 <img
                   width="360"
+                  srcset="
+                    ./images/portfolio4.jpg    1x,
+                    ./images/portfolio4-x2.jpg 2x
+                  "
                   src="./images/portfolio4.jpg"
                   alt="inside car"
                   loading="lazy"
@@ -385,6 +423,10 @@
               <div class="portfolio-picture-wrapper">
                 <img
                   width="360"
+                  srcset="
+                    ./images/portfolio5.jpg    1x,
+                    ./images/portfolio5-x2.jpg 2x
+                  "
                   src="./images/portfolio5.jpg"
                   alt="phone screen"
                   loading="lazy"
@@ -405,6 +447,10 @@
               <div class="portfolio-picture-wrapper">
                 <img
                   width="360"
+                  srcset="
+                    ./images/portfolio6.jpg    1x,
+                    ./images/portfolio6-x2.jpg 2x
+                  "
                   src="./images/portfolio6.jpg"
                   alt="girl with a phone"
                   loading="lazy"
@@ -426,7 +472,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container flex f-base">
+      <div class="container flex f-base f-wrap">
         <div class="logo-wrapper">
           <a class="logo" href="./index.html" title="WebStudio">
             Web<span class="c-nav">Studio</span>
@@ -440,28 +486,28 @@
           <p class="footer-title">Social media</p>
           <ul class="unstyle flex small-gap f-center f-text-c">
             <li class="soc-item">
-              <a class="soc-link" href="">
+              <a class="soc-link flex f-center f-text-c" href="">
                 <svg width="24" height="24" class="soc-icon">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="soc-item">
-              <a class="soc-link" href="">
+              <a class="soc-link flex f-center f-text-c" href="">
                 <svg width="24" height="24" class="soc-icon">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="soc-item">
-              <a class="soc-link" href="">
+              <a class="soc-link flex f-center f-text-c" href="">
                 <svg width="24" height="24" class="soc-icon">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
             <li class="soc-item">
-              <a class="soc-link" href="">
+              <a class="soc-link flex f-center f-text-c" href="">
                 <svg width="24" height="24" class="soc-icon">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
@@ -471,7 +517,7 @@
         </div>
         <div class="subscribe-wrapper">
           <p class="footer-title">Subscribe</p>
-          <form class="flex gap">
+          <form class="flex gap f-wrap text-c f-text-c">
             <label class="subscribe-label" for="footer-email">
               <input
                 id="footer-email"
@@ -569,15 +615,17 @@
               value="true"
               required
             />
-            <label class="label" for="user-privacy"
-              ><span class="label-checkbox">
+            <label class="label" for="user-privacy">
+              <span class="label-checkbox">
                 <svg width="10" height="8" class="modal-form-checkbox">
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="privacy-link" href="">Privacy Policy</a></label
-            >
+              <span>
+                I accept the terms and conditions of the
+                <a class="privacy-link" href="">Privacy Policy</a>
+              </span>
+            </label>
           </div>
 
           <button class="large button" type="submit">Send</button>
