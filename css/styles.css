@@ -38,6 +38,8 @@ body {
 img {
   display: block;
   width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -147,6 +149,7 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 .section-title {
@@ -205,10 +208,6 @@ p {
 
 .button:hover {
   background-color: var(--background-order-button-hover);
-}
-
-.section-padding {
-  padding: 120px 0;
 }
 
 .benefits-section-wrapper .subsection-title {
@@ -582,8 +581,8 @@ p {
   .page-title {
       font-size: 36px;
       line-height: 40px;
-      padding: 0 36px 22.5%;
-      margin: auto;
+      max-width: 210px;
+      margin: 0 auto 22.5%;
   }
   .benefits-item {
     width: 100%;
@@ -599,9 +598,12 @@ p {
   }
   .portfolio-section-wrapper .flex {
     gap: 72px 0;
+    flex-direction: column;
+    align-items: center;
   }
   .portfolio-item{
     width: 100%;
+    max-width: 360px;
   }
   .footer {
     padding: 96px 0;
@@ -646,6 +648,9 @@ p {
     font-weight: 700;
     font-size: 36px;
     line-height: 40px;
+  }
+  .benefits-section-wrapper .subsection-title{
+    text-align: center;
   }
 }
 /* Tablets and Mobile */
@@ -791,5 +796,15 @@ p {
   }
   .logo-wrapper {
     margin-right: 120px;
+  }
+}
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 96px 0;
+  }
+}
+@media (min-width: 769px) {
+  .section-padding {
+    padding: 120px 0;
   }
 }
